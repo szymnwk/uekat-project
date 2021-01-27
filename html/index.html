@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEKat Project</title>
+    <link rel="stylesheet" href="css/style.css"/> 
+</head>
+<body>
+    <div class="app">
+        <header class="app__header">
+            <div class="header">
+                <div class="header__container">
+                    <img src="images/logo.jpg" alt="UEKat" class="header__logo">
+                </div>
+            </div>
+        </header>
+        <main class="app__view">
+            <div class="view">
+                <h1 class="view__headline">Projekt zaliczeniowy</h1>
+                <p class="view__paragraph">Prosta aplikacja webowa napisana w PHP pobierająca listę nauczycieli akademickich UE Katowice oraz przedmioty, które prowadzą. Dane przechowywane są w MySQLowej bazie danych i pobierane asynchronicznie po załadowaniu strony.</p>
+                <div class="view__list">
+                    <div class="list" id="list">
+                        <div class="list__loader" id="list-loader">
+                            <div class="loader">
+                                <div class="loader__chunk"></div>
+                                <div class="loader__chunk"></div>
+                                <div class="loader__chunk"></div>
+                            </div>
+                        </div>
+                        <table class="list__table list-table" id="list-table" style="display:none">
+                            <tbody class="list-table__body">
+                                <tr class="list-table__tr">
+                                    <th class="list-table__th">ID</th>
+                                    <th class="list-table__th">Stopień</th>
+                                    <th class="list-table__th">Imię i nazwisko</th>
+                                    <th class="list-table__th">Prowadzone przedmioty</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="app__footer">
+            <div class="footer">&copy; 2021 Szymon Nowak</div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
