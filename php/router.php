@@ -1,15 +1,16 @@
 <?php
 
 $path = !empty($_GET) ? $_GET['path'] : '';
-// echo dirname('php/routing/routes.php');
 $routes = [
     '' => 'index',
-    'api/lecturers/all' => 'get-all-lecturers',
+    'add-lecturer' => 'add-lecturer',
+    'delete-lecturer' => 'delete-lecturer',
 ];
 $action = $routes[$path];
 
 if (empty($action)) {
-    header('HTTP/1.0 404 Not Found');
+    // header('HTTP/1.0 404 Not Found');
+    http_response_code(404);
     exit;
 }
 

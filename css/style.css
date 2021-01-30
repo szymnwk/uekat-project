@@ -19,6 +19,23 @@ a {
     color: inherit;
 }
 
+.btn {
+    display: inline-block;
+    padding: 1rem 1.5rem calc(1rem + 2px);
+    background: #0089ff;
+    border: 0;
+    color: #fff;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.link {
+    color: #0089ff;
+    text-decoration: underline;
+}
+
 .app {
     height: 100%;
     display: flex;
@@ -27,7 +44,7 @@ a {
 
 .app__header {
     flex: 0 0 auto;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #aaa;
 }
 
 .app__view {
@@ -59,14 +76,75 @@ a {
 }
 
 .view__headline {
-    margin: 0 0 1rem;
+    margin: 0 0 2rem;
     font-size: 20px;
 }
 
-.view__paragraph {
+/* .view__paragraph {
     line-height: 1.5;
     color: #666;
     margin: 0 0 2rem;
+} */
+
+.view__list {
+    margin: 0 0 4rem;
+}
+
+.view__form {
+    /* ... */
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-right: -2.5rem; */
+    padding: 2rem 2.5rem;
+    border: 1px solid #aaa;
+    background: #fff;
+}
+
+.form__set { 
+    flex: 0 0 auto;
+    margin: 0 2.5rem 2rem 0;
+    padding: 0;
+    border: 0;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #666666;
+}
+
+.form__checkboxes {
+    display: flex;
+    margin-right: -2rem;
+    margin-bottom: -2rem;
+}
+
+.form__checkbox {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form__submit {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__input {
+    margin: 0 0.5rem 0 0;
+}
+
+.checkbox__label {
+    font-size: 12px;
 }
 
 .footer {
@@ -82,7 +160,9 @@ a {
 }
 
 .list-table {
+    width: 100%;
     border-collapse: collapse;
+    background: #fff;
 }
 
 .list-table__th {
@@ -106,7 +186,7 @@ a {
 .subjects-list__badge {
     flex: 0 0 auto;
     padding: 6px 8px;
-    background: #0b3162;
+    background: #0089ff;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -114,14 +194,6 @@ a {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
 }
-
-/* .btn {
-    display: inline-block;
-    padding: 1rem;
-    background: #0b3162;
-    color: #fff;
-    border-radius: 6px;
-} */
 
 .loader {
     display: inline-block;
